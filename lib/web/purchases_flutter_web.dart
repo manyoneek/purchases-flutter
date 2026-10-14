@@ -326,22 +326,22 @@ class PurchasesFlutterPlugin {
 
   Future<void> _setAttributes(dynamic arguments) async {
     final attributes = Map<String, dynamic>.from(arguments['attributes']);
-    _callInstanceMethod('setAttributes', [attributes]);
+    await _callVoidInstanceMethod('setAttributes', [attributes]);
   }
 
   Future<void> _setEmail(dynamic arguments) async {
     final email = arguments['email'] as String?;
-    _callInstanceMethod('setEmail', [email]);
+    await _callVoidInstanceMethod('setEmail', [email]);
   }
 
   Future<void> _setPhoneNumber(dynamic arguments) async {
     final phoneNumber = arguments['phoneNumber'] as String?;
-    _callInstanceMethod('setPhoneNumber', [phoneNumber]);
+    await _callVoidInstanceMethod('setPhoneNumber', [phoneNumber]);
   }
 
   Future<void> _setDisplayName(dynamic arguments) async {
     final displayName = arguments['displayName'] as String?;
-    _callInstanceMethod('setDisplayName', [displayName]);
+    await _callVoidInstanceMethod('setDisplayName', [displayName]);
   }
 
   Future<Map<String, dynamic>> _getVirtualCurrencies() async =>
@@ -383,6 +383,18 @@ class PurchasesFlutterPlugin {
     final purchases = _getInstance();
     final jsArgs = _processArgs(args);
     return purchases.callMethodVarArgs(methodName.toJS, jsArgs);
+  }
+
+  Future<void> _callVoidInstanceMethod(
+    String methodName,
+    List<dynamic> args,
+  ) async {
+    final promise = _callInstanceMethod(methodName, args) as JSPromise;
+    try {
+      await promise.toDart;
+    } catch (error) {
+      throw _processError(error);
+    }
   }
 
   JSObject _getInstance() {
