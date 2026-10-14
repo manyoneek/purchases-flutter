@@ -1,0 +1,28 @@
+Analyzing lib...                                                
+
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:101:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:103:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:105:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:107:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:109:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:111:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:113:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:115:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:117:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:119:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:121:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:123:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:127:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:129:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:131:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:133:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:136:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:138:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:140:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:142:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:144:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:146:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:148:11 • unawaited_return_in_try_block
+warning • Returning a 'Future' without 'await' inside a try block. Try adding an 'await' • lib/web/purchases_flutter_web.dart:165:11 • unawaited_return_in_try_block
+
+24 issues found. (ran in 1.4s)

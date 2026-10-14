@@ -1,0 +1,6 @@
+00:00 +0: loading <local-user>/.openclaw/workspace/projects/revenuecat-bug-reporter/publication/2026-10-14/flutter-proxy/test/local_boundary/web_boundary_test.dart
+00:00 +0: (setUpAll)
+00:00 +0: proxy: public setProxyURL reaches synchronous shared setter
+00:00 +1: proxy: handler does not require a Promise from the void JS setter
+00:00 +2: (tearDownAll)
+00:00 +2: All tests passed!
