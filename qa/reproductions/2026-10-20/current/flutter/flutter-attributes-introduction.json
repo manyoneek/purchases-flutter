@@ -1,0 +1,13 @@
+{
+  "id": "RC-FLUTTER-20261014-002",
+  "repository": "RevenueCat/purchases-flutter",
+  "commit": "b553322f5328b97c7d99c9da3814a4224990656d",
+  "pullRequest": "https://github.com/RevenueCat/purchases-flutter/pull/1413",
+  "mergedDate": "2025-07-28",
+  "firstStableSourceTag": "9.2.0",
+  "classification": "Present since these four web attribute setters were implemented.",
+  "evidence": "This PR introduced the four handlers with discarded JavaScript Promises. With its pinned 16.1.0 bundle, all four forwarding controls pass and all eight completion/rejection checks fail; awaiting/converting the Promises makes all twelve pass. The preceding revision had no implementations of these four handlers (the generic attribute route was a web no-op).",
+  "limitations": "Actual historical handlers and pinned JS mapping in Chrome; controlled downstream promise, no customer/backend operation. The archived bundle was served locally.",
+  "investigatedAt": "2026-10-17",
+  "evidenceDirectory": "<local-user>/.openclaw/workspace/projects/revenuecat-bug-reporter/history/2026-10-17"
+}

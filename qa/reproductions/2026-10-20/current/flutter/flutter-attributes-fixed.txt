@@ -1,0 +1,15 @@
+RevenueCat · SDK Bug Reporter
+Flutter web · commit 2218dec4 · actual public SDK calls · latest-with-fix
+Browser network: Offline
+01 / Proxy configuration
+Run before configuration. Expected: storing the URL completes successfully.
+Run proxy case
+02 / Attribute completion and errors
+Initialize online, then use Chrome DevTools → Network → Offline. Run the setters and wait for the SDK operation. Expected: each Future reflects its real operation.
+Initialize Test Store
+Run attribute setters
+Public API results
+18:16:30.062 Configuring dedicated Test Store user: bug-reporter-web-1792530989951 18:16:31.294 Real backend initialized. User: bug-reporter-web-1792530989951; packages: 1 18:16:32.204 setAttributes: awaiting public Future... 18:16:32.218 setAttributes: Future ERROR after 14 ms: PlatformException(10, Error performing request. Please check your network connection and try again.. Failed to fetch, {code: 10, message: Error performing request. Please check your network connection and try again., underlyingErrorMessage: Failed to fetch, userCancelled: false, info: {statusCode: null, backendErrorCode: null}}, null) 18:16:32.218 setEmail: awaiting public Future... 18:16:32.220 setEmail: Future ERROR after 1 ms: PlatformException(10, Error performing request. Please check your network connection and try again.. Failed to fetch, {code: 10, message: Error performing request. Please check your network connection and try again., underlyingErrorMessage: Failed to fetch, userCancelled: false, info: {statusCode: null, backendErrorCode: null}}, null) 18:16:32.220 setPhoneNumber: awaiting public Future... 18:16:32.221 setPhoneNumber: Future ERROR after 1 ms: PlatformException(10, Error performing request. Please check your network connection and try again.. Failed to fetch, {code: 10, message: Error performing request. Please check your network connection and try again., underlyingErrorMessage: Failed to fetch, userCancelled: false, info: {statusCode: null, backendErrorCode: null}}, null) 18:16:32.221 setDisplayName: awaiting public Future... 18:16:32.221 setDisplayName: Future ERROR after 0 ms: PlatformException(10, Error performing request. Please check your network connection and try again.. Failed to fetch, {code: 10, message: Error performing request. Please check your network connection and try again., underlyingErrorMessage: Failed to fetch, userCancelled: false, info: {statusCode: null, backendErrorCode: null}}, null)
+Browser unhandled promise rejections
+None observed
+No mocked SDK functions or callback injection. Dedicated synthetic Test Store user; no real charges.

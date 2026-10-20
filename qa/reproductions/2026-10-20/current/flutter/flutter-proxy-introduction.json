@@ -1,0 +1,13 @@
+{
+  "id": "RC-FLUTTER-20261014-001",
+  "repository": "RevenueCat/purchases-flutter",
+  "commit": "762ae64b0e8422e47fe24a2353f1cee082f7f74b",
+  "pullRequest": "https://github.com/RevenueCat/purchases-flutter/pull/1407",
+  "mergedDate": "2025-07-17",
+  "firstStableSourceTag": "9.0.0",
+  "classification": "Present since Flutter web support was introduced.",
+  "evidence": "The initial web dispatcher used `setProxyURL` although the public API sent `setProxyURLString`, and treated the synchronous shared setter as a Promise. Both focused Chrome checks fail at this commit with its pinned 13.29.0 JavaScript bundle; both pass with the two-part fix. The parent had no web implementation.",
+  "limitations": "Actual historical Dart handlers and pinned JS bundle; only the bundle URL was redirected to a local byte-identical download. No service/proxy connection or mobile execution.",
+  "investigatedAt": "2026-10-17",
+  "evidenceDirectory": "<local-user>/.openclaw/workspace/projects/revenuecat-bug-reporter/history/2026-10-17"
+}

@@ -1,0 +1,15 @@
+RevenueCat · SDK Bug Reporter
+Flutter web · commit 2218dec4 · actual public SDK calls · latest-upstream
+Browser network: Offline
+01 / Proxy configuration
+Run before configuration. Expected: storing the URL completes successfully.
+Run proxy case
+02 / Attribute completion and errors
+Initialize online, then use Chrome DevTools → Network → Offline. Run the setters and wait for the SDK operation. Expected: each Future reflects its real operation.
+Initialize Test Store
+Run attribute setters
+Public API results
+18:16:16.688 Configuring dedicated Test Store user: bug-reporter-web-1792530974773 18:16:17.856 Real backend initialized. User: bug-reporter-web-1792530974773; packages: 1 18:16:18.060 setAttributes: awaiting public Future... 18:16:18.061 setAttributes: Future SUCCESS after 0 ms 18:16:18.061 setEmail: awaiting public Future... 18:16:18.061 setEmail: Future SUCCESS after 0 ms 18:16:18.061 setPhoneNumber: awaiting public Future... 18:16:18.061 setPhoneNumber: Future SUCCESS after 0 ms 18:16:18.061 setDisplayName: awaiting public Future... 18:16:18.061 setDisplayName: Future SUCCESS after 0 ms
+Browser unhandled promise rejections
+#1 Unhandled code 10: Error performing request. Please check your network connection and try again. #2 Unhandled code 10: Error performing request. Please check your network connection and try again. #3 Unhandled code 10: Error performing request. Please check your network connection and try again. #4 Unhandled code 10: Error performing request. Please check your network connection and try again.
+No mocked SDK functions or callback injection. Dedicated synthetic Test Store user; no real charges.

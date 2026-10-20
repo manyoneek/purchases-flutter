@@ -1,0 +1,56 @@
+[
+  {
+    "event": "response",
+    "url": "https://api.revenuecat.com/v1/subscribers/bug-reporter-web-1792530989951",
+    "status": 201,
+    "time": 1792530990458
+  },
+  {
+    "event": "response",
+    "url": "https://api.revenuecat.com/v1/subscribers/bug-reporter-web-1792530989951/offerings",
+    "status": 200,
+    "time": 1792530990866
+  },
+  {
+    "event": "response",
+    "url": "https://api.revenuecat.com/rcbilling/v1/subscribers/bug-reporter-web-1792530989951/products?id=bug_reporter_monthly",
+    "status": 200,
+    "time": 1792530991288
+  },
+  {
+    "event": "failed",
+    "url": "https://api.revenuecat.com/v1/subscribers/bug-reporter-web-1792530989951",
+    "method": "GET",
+    "error": {
+      "errorText": "net::ERR_INTERNET_DISCONNECTED"
+    },
+    "time": 1792530992218
+  },
+  {
+    "event": "failed",
+    "url": "https://api.revenuecat.com/v1/subscribers/bug-reporter-web-1792530989951",
+    "method": "GET",
+    "error": {
+      "errorText": "net::ERR_INTERNET_DISCONNECTED"
+    },
+    "time": 1792530992222
+  },
+  {
+    "event": "failed",
+    "url": "https://api.revenuecat.com/v1/subscribers/bug-reporter-web-1792530989951",
+    "method": "GET",
+    "error": {
+      "errorText": "net::ERR_INTERNET_DISCONNECTED"
+    },
+    "time": 1792530992222
+  },
+  {
+    "event": "failed",
+    "url": "https://api.revenuecat.com/v1/subscribers/bug-reporter-web-1792530989951",
+    "method": "GET",
+    "error": {
+      "errorText": "net::ERR_INTERNET_DISCONNECTED"
+    },
+    "time": 1792530992223
+  }
+]
