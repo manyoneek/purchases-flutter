@@ -25,7 +25,6 @@ void main() {
         .setMockMethodCallHandler(channel, plugin.handleMethodCall);
     js(r'''
       globalThis.qa = { unexpectedNetwork: 0 };
-      // No SDK configuration/customer/account. Block any service transport.
       globalThis.fetch = () => { qa.unexpectedNetwork++; throw Error('Network forbidden in local QA'); };
       XMLHttpRequest.prototype.open = function() { qa.unexpectedNetwork++; throw Error('Network forbidden in local QA'); };
       qa.Common = PurchasesHybridMappings.PurchasesCommon;
@@ -60,9 +59,7 @@ void main() {
         return qa.nativePromise;
       }});
       qa.Common.isConfigured = () => true;
-      // Observe the real mapping promises and suppress unhandled browser
-      // rejection noise when the broken Dart code discards them. Return each
-      // original promise unchanged; never simulate the mapping behavior.
+      // Observe rejections without replacing the original promises.
       for (const method of ['setAttributes', 'setEmail', 'setPhoneNumber', 'setDisplayName']) {
         const original = qa.Common.instance[method];
         qa.Common.instance[method] = function(...args) {
