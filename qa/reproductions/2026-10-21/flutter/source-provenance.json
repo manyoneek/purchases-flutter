@@ -5,6 +5,13 @@
   "sourceArchiveSHA256": "5de286bb2a8bbd6054614fdb71f6aae0d9db283349f5e6536a0f21e994f0ba23",
   "configuration": "Public Test Store SDK key replaced by a placeholder only in source.zip",
   "freshAppDate": "2026-10-21",
-  "sdkMappingVersion": "19.14.0",
-  "checkedAt": "2026-10-21T09:10:24.250155+00:00"
+  "checkedAt": "2026-10-21T09:10:24.250155+00:00",
+  "vendoredWebBundleSHA256": "9295cf910f1233169af90c5ec6d48e0fb8065b873a972b11d7f652a19a9028eb",
+  "vendoredWebBundleVersion": "not independently established",
+  "bundleIdentityVerified": [
+    "upstream source",
+    "focused browser test fixture",
+    "actual before build",
+    "actual fixed build"
+  ]
 }

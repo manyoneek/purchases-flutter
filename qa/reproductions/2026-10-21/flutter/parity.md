@@ -15,7 +15,7 @@ Source comparison, not executed native integration. Public names were traced to 
 
 ## Contracts and limits
 
-- Cordova and Capacitor now pin PurchasesHybridCommon **19.14.0**. Capacitor TypeScript internals also pin 19.14.0. The Flutter browser bundle is 19.14.0; app Dart package resolution is preserved in its lockfile.
+- Cordova and Capacitor now pin PurchasesHybridCommon **19.14.0**. Capacitor TypeScript internals also pin 19.14.0. The Flutter browser uses a vendored bundle with SHA-256 `9295cf910f1233169af90c5ec6d48e0fb8065b873a972b11d7f652a19a9028eb`; the package version was not independently established. Identical bytes were verified in the upstream source, focused browser fixture, and both built apps. Dart package resolution is preserved in its lockfile.
 - The official [placement support table](https://www.revenuecat.com/docs/tools/targeting/placements), checked October 21, lists iOS 4.38.0+, Android 7.7.0+, React Native 7.23.0+, Flutter 6.22.0+, Capacitor 7.5.0+, Unity 6.9.0+, and web 0.8.0+. Cordova is absent. That omission establishes documented support scope, not the reason for the gap. No claim that the absence is intentional was established.
 - Cordova getOfferings provides the current/default offering, not placement selection or a synchronized attribute-dependent offerings refresh. Direct native shared APIs are not an equivalent public Cordova API. These are parity candidates, not confirmed published findings: the intended support policy and a genuine native integration for the proposed additive APIs remain unverified.
 - KMP placement lookup is implemented on Offerings; its absence on Purchases is not a missing API. Unity exposes the four compared capabilities. Neither received device/runtime verification in this run.
