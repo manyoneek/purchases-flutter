@@ -1,0 +1,42 @@
+[
+  {
+    "width": 1280,
+    "height": 1040,
+    "duration": "2.766667",
+    "nb_frames": "83",
+    "file": "flutter-proxy-fixed.mp4",
+    "sourceFrames": 35,
+    "uniqueFrames": 33,
+    "sha256": "9007f1ced6b896003605c7cfb8d53f6d0ce2d0bc33447a94b6b648ad87e614a9"
+  },
+  {
+    "width": 1280,
+    "height": 1040,
+    "duration": "10.833333",
+    "nb_frames": "325",
+    "file": "flutter-attributes.mp4",
+    "sourceFrames": 94,
+    "uniqueFrames": 90,
+    "sha256": "15a8376f168df88e13ea26b99bf854d02825ea889716d873d135cd4f0f850aad"
+  },
+  {
+    "width": 1280,
+    "height": 1040,
+    "duration": "7.966667",
+    "nb_frames": "239",
+    "file": "flutter-proxy.mp4",
+    "sourceFrames": 57,
+    "uniqueFrames": 56,
+    "sha256": "3ef89d289a49b97e46834b097e27d6ee3f99931d2b906531c13ac81a89694e3e"
+  },
+  {
+    "width": 1280,
+    "height": 1040,
+    "duration": "4.366667",
+    "nb_frames": "131",
+    "file": "flutter-attributes-fixed.mp4",
+    "sourceFrames": 41,
+    "uniqueFrames": 39,
+    "sha256": "76e3dae07b635abb57fb9bbe2e0a297d5d9c321d483380fb5d73133fbafb7912"
+  }
+]

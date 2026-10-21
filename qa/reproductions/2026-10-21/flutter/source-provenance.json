@@ -1,0 +1,10 @@
+{
+  "upstream": "1d7bfb424e4596d638c9ac0a53e1ce3e18db16af",
+  "fix": "84c390be27729e0d582672d67288863ceb7c0cf9",
+  "fixedWebImplementationSHA256": "2e232f7f2fe5e6b47b0be1e17ede866f747ea63cd0708ca2d92e40442cb5f6a4",
+  "sourceArchiveSHA256": "5de286bb2a8bbd6054614fdb71f6aae0d9db283349f5e6536a0f21e994f0ba23",
+  "configuration": "Public Test Store SDK key replaced by a placeholder only in source.zip",
+  "freshAppDate": "2026-10-21",
+  "sdkMappingVersion": "19.14.0",
+  "checkedAt": "2026-10-21T09:10:24.250155+00:00"
+}

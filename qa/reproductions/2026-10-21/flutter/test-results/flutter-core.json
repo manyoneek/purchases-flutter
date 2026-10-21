@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/Users/mannyoneek/tools/flutter/bin/flutter",
+    "test"
+  ],
+  "cwd": "runs/2026-10-21/worktrees/purchases-flutter",
+  "exit": 0,
+  "timedOut": false,
+  "seconds": 8.51,
+  "log": "/Users/mannyoneek/.openclaw/workspace/projects/revenuecat-bug-reporter/runs/2026-10-21/logs/flutter-core.log"
+}

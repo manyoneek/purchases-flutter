@@ -1,0 +1,34 @@
+flutter-proxy-fixed RevenueCat · SDK Bug Reporter
+Flutter web · commit 1d7bfb42 · actual public SDK calls · fixed-2026-10-21
+Recording clock: 06:07:14.987
+Browser network: Online
+01 / Proxy configuration
+Run before configuration. Expected: storing the URL completes successfully.
+Run proxy case
+02 / Attribute completion and errors
+Initialize online, then use Chrome DevTools → Network → Offline. Run the setters and wait for the SDK operation. Expected: each Future reflects its real operation.
+Initialize Test Store
+Run attribute setters
+Public API results
+06:07:13.170 Calling await Purchases.setProxyURL("https://proxy.invalid") 06:07:13.171 Proxy setter completed successfully.
+Browser unhandled promise rejections
+None observed
+No mocked SDK functions or callback injection. Dedicated synthetic Test Store user; no real charges.
+
+flutter-attributes-fixed RevenueCat · SDK Bug Reporter
+Flutter web · commit 1d7bfb42 · actual public SDK calls · fixed-2026-10-21
+Recording clock: 06:07:21.297
+Browser network: Offline
+01 / Proxy configuration
+Run before configuration. Expected: storing the URL completes successfully.
+Run proxy case
+02 / Attribute completion and errors
+Initialize online, then use Chrome DevTools → Network → Offline. Run the setters and wait for the SDK operation. Expected: each Future reflects its real operation.
+Initialize Test Store
+Run attribute setters
+Public API results
+06:07:15.401 Configuring dedicated Test Store user: bug-reporter-web-1792573635288 06:07:16.701 Real backend initialized. User: bug-reporter-web-1792573635288; packages: 1 06:07:18.039 setAttributes: awaiting public Future... 06:07:18.061 setAttributes: Future ERROR after 22 ms: PlatformException(10, Error performing request. Please check your network connection and try again.. Failed to fetch, {code: 10, message: Error performing request. Please check your network connection and try again., underlyingErrorMessage: Failed to fetch, userCancelled: false, info: {statusCode: null, backendErrorCode: null}}, null) 06:07:18.061 setEmail: awaiting public Future... 06:07:18.070 setEmail: Future ERROR after 8 ms: PlatformException(10, Error performing request. Please check your network connection and try again.. Failed to fetch, {code: 10, message: Error performing request. Please check your network connection and try again., underlyingErrorMessage: Failed to fetch, userCancelled: false, info: {statusCode: null, backendErrorCode: null}}, null) 06:07:18.070 setPhoneNumber: awaiting public Future... 06:07:18.071 setPhoneNumber: Future ERROR after 1 ms: PlatformException(10, Error performing request. Please check your network connection and try again.. Failed to fetch, {code: 10, message: Error performing request. Please check your network connection and try again., underlyingErrorMessage: Failed to fetch, userCancelled: false, info: {statusCode: null, backendErrorCode: null}}, null) 06:07:18.071 setDisplayName: awaiting public Future... 06:07:18.072 setDisplayName: Future ERROR after 0 ms: PlatformException(10, Error performing request. Please check your network connection and try again.. Failed to fetch, {code: 10, message: Error performing request. Please check your network connection and try again., underlyingErrorMessage: Failed to fetch, userCancelled: false, info: {statusCode: null, backendErrorCode: null}}, null)
+Browser unhandled promise rejections
+None observed
+No mocked SDK functions or callback injection. Dedicated synthetic Test Store user; no real charges.
+

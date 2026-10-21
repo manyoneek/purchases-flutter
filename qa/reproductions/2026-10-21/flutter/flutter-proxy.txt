@@ -1,0 +1,16 @@
+RevenueCat · SDK Bug Reporter
+Flutter web · commit 1d7bfb42 · actual public SDK calls · upstream-2026-10-21
+Recording clock: 06:06:43.258
+Browser network: Online
+01 / Proxy configuration
+Run before configuration. Expected: storing the URL completes successfully.
+Run proxy case
+02 / Attribute completion and errors
+Initialize online, then use Chrome DevTools → Network → Offline. Run the setters and wait for the SDK operation. Expected: each Future reflects its real operation.
+Initialize Test Store
+Run attribute setters
+Public API results
+06:06:37.314 Calling await Purchases.setProxyURL("https://proxy.invalid") 06:06:37.314 Proxy setter completed successfully.
+Browser unhandled promise rejections
+None observed
+No mocked SDK functions or callback injection. Dedicated synthetic Test Store user; no real charges.

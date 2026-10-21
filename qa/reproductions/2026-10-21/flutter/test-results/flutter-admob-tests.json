@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/Users/mannyoneek/tools/flutter/bin/flutter",
+    "test"
+  ],
+  "cwd": "runs/2026-10-21/worktrees/purchases-flutter/purchases_admob_flutter",
+  "exit": 0,
+  "timedOut": false,
+  "seconds": 5.61,
+  "log": "/Users/mannyoneek/.openclaw/workspace/projects/revenuecat-bug-reporter/runs/2026-10-21/logs/flutter-admob-tests.log"
+}

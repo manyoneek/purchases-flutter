@@ -1,0 +1,43 @@
+[
+  {
+    "name": "pub-get",
+    "command": [
+      "/Users/mannyoneek/tools/flutter/bin/flutter",
+      "pub",
+      "get"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "build-before",
+    "command": [
+      "/Users/mannyoneek/tools/flutter/bin/flutter",
+      "build",
+      "web",
+      "--dart-define=VARIANT=upstream-2026-10-21",
+      "--output=/Users/mannyoneek/.openclaw/workspace/projects/revenuecat-bug-reporter/runs/2026-10-21/flutter-current/before"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "apply-fix",
+    "command": [
+      "patch",
+      "-p1",
+      "-i",
+      "/Users/mannyoneek/.openclaw/workspace/projects/revenuecat-bug-reporter/runs/2026-10-21/flutter-current/fix.patch"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "build-fixed",
+    "command": [
+      "/Users/mannyoneek/tools/flutter/bin/flutter",
+      "build",
+      "web",
+      "--dart-define=VARIANT=fixed-2026-10-21",
+      "--output=/Users/mannyoneek/.openclaw/workspace/projects/revenuecat-bug-reporter/runs/2026-10-21/flutter-current/fixed"
+    ],
+    "exit": 0
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "type": "debug",
+    "text": "Injecting <script> tag. Using callback."
+  },
+  {
+    "type": "debug",
+    "text": "Injecting <script> tag. Using callback."
+  },
+  {
+    "type": "error",
+    "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED"
+  },
+  {
+    "type": "error",
+    "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED"
+  },
+  {
+    "type": "error",
+    "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED"
+  },
+  {
+    "type": "error",
+    "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED"
+  }
+]

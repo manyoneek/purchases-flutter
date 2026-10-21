@@ -1,0 +1,32 @@
+[
+  {
+    "scene": 0,
+    "start": 0,
+    "duration": 9.450000000000001,
+    "narrationDuration": 8.65
+  },
+  {
+    "scene": 1,
+    "start": 9.466667,
+    "duration": 10.47,
+    "narrationDuration": 9.67
+  },
+  {
+    "scene": 2,
+    "start": 19.936667,
+    "duration": 9.33,
+    "narrationDuration": 8.53
+  },
+  {
+    "scene": 3,
+    "start": 29.27,
+    "duration": 9.56,
+    "narrationDuration": 8.76
+  },
+  {
+    "scene": 4,
+    "start": 38.836667,
+    "duration": 11.82,
+    "narrationDuration": 11.02
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/Users/mannyoneek/tools/flutter/bin/flutter",
+    "test",
+    "--platform",
+    "chrome",
+    "test/local_boundary/web_attributes_test.dart"
+  ],
+  "cwd": "runs/2026-10-21/worktrees/flutter-attributes-fix",
+  "exit": 0,
+  "timedOut": false,
+  "seconds": 13.32,
+  "log": "/Users/mannyoneek/.openclaw/workspace/projects/revenuecat-bug-reporter/runs/2026-10-21/logs/flutter-fixed-web.log"
+}

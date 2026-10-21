@@ -1,0 +1,6 @@
+{
+  "upstream": "1d7bfb424e4596d638c9ac0a53e1ce3e18db16af",
+  "fix": "84c390be27729e0d582672d67288863ceb7c0cf9",
+  "previousFix": "e172627e15465149bb5c0827b18e29c8dc5d8b6d",
+  "fixWorktree": "/Users/mannyoneek/.openclaw/workspace/projects/revenuecat-bug-reporter/runs/2026-10-21/worktrees/flutter-attributes-fix"
+}

@@ -1,0 +1,51 @@
+1
+00:00:00,300 --> 00:00:04,625
+Flutter web attribute setters can report success before the underlying update
+
+2
+00:00:04,625 --> 00:00:08,950
+finishes. When that update fails, the caller never receives the error.
+
+3
+00:00:09,767 --> 00:00:14,795
+The app first configures the real Test Store, then the browser goes offline.
+
+4
+00:00:14,795 --> 00:00:19,050
+All four setter futures report success, while their JavaScript promises reject
+
+5
+00:00:19,050 --> 00:00:19,437
+separately.
+
+6
+00:00:20,237 --> 00:00:25,111
+The shared setters return promises. The Dart web handlers discard them, so
+
+7
+00:00:25,111 --> 00:00:28,767
+their futures complete immediately and lose the asynchronous failures.
+
+8
+00:00:29,570 --> 00:00:32,617
+The fix awaits and converts each JavaScript promise.
+
+9
+00:00:32,617 --> 00:00:36,807
+The returned future now represents the actual operation and propagates its
+
+10
+00:00:36,807 --> 00:00:38,330
+rejection to the caller.
+
+11
+00:00:39,137 --> 00:00:43,912
+In the same offline scenario, all four calls now report caught errors with
+
+12
+00:00:43,912 --> 00:00:47,218
+no unhandled rejections. All twelve focused Chrome checks pass.
+
+13
+00:00:47,218 --> 00:00:50,157
+This defect is specific to the web implementation.

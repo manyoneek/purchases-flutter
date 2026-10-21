@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/Users/mannyoneek/tools/flutter/bin/flutter",
+    "test"
+  ],
+  "cwd": "runs/2026-10-21/worktrees/flutter-attributes-fix",
+  "exit": 0,
+  "timedOut": false,
+  "seconds": 6.38,
+  "log": "/Users/mannyoneek/.openclaw/workspace/projects/revenuecat-bug-reporter/runs/2026-10-21/logs/flutter-fixed-core.log"
+}

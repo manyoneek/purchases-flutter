@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/Users/mannyoneek/tools/flutter/bin/flutter",
+    "test",
+    "--platform",
+    "chrome",
+    "test/local_boundary/web_attributes_test.dart"
+  ],
+  "cwd": "runs/2026-10-21/worktrees/purchases-flutter",
+  "exit": 1,
+  "timedOut": false,
+  "seconds": 12.45,
+  "log": "/Users/mannyoneek/.openclaw/workspace/projects/revenuecat-bug-reporter/runs/2026-10-21/logs/flutter-before-web.log"
+}
